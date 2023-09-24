@@ -1,0 +1,529 @@
+html,body {    
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+:root{
+    --brown: #6e4b35;
+    --hover: #124699;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* ====================== Navigation bar ====================== */
+.nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background: transparent;
+    color: #141414;
+    min-height: 8.5vh;
+}
+
+.furnid_title{
+    color: #191717;
+    font-size: 2.5rem;
+    margin: .5rem 2rem;
+    font-weight: bolder;    
+}
+
+.navbar_button{
+    justify-content: center;
+}
+
+.navbar_button ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar_button li a{
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #191717;
+    padding: 2rem;
+    display: block;
+}
+
+.navbar_button li:hover{
+    background-color: #191717;
+    transition: all 0.3s ease;
+}
+
+.navbar_button li a:hover{
+    color: #fff;
+}
+
+.fa-couch{
+    margin: 0 0.5rem;
+    color: #CCC8AA;
+}
+
+.hamburger_button{
+    width: 29px;
+    height: 25px;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 0.75rem;
+    right: 1rem;
+}
+
+.hamburger_button .bars{
+    height: 3px;
+    width: 100%;
+    background-color: #191717;
+    border-radius: 10px;
+}
+
+/* Button box */
+
+.button{
+    background: #7D7C7C;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 20px 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background: #191717;    
+    transition: all 0.3s ease;
+}
+
+
+/* =========================================================== */
+
+/* ====================== Homepage =========================== */
+
+main .homepage_background{    
+    display: flex;
+    height: 130vh;
+    justify-content: center;
+    background: url(/Images/Home/Background\ alt.jpg);
+    background-size: cover;
+}
+
+main .wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .homepage_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .homepage_content input{
+    margin-top: 3rem;
+    width: 700px;
+    height: 50%;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    border-radius: 10px;
+    padding-left: 1rem;
+}
+
+main .text{
+    display: flex;
+    text-align: center;
+}
+
+main .text h1{
+    margin-top: 25%;
+    color: #fff;
+    font-weight: 400;   
+    font-size: 3rem;
+    
+}
+
+
+
+
+/* =========================================================== */
+
+
+/* ====================== Sign In =========================== */
+
+.form_container{
+    background: url(/Images/Sign\ In\ Images/form-bg2.jpg);
+    background-size: cover;
+    height: 91.5vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_content{
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    height: 520px;
+    background: #fff;
+    color: #141414;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+.form_content h1{
+    margin: 0;
+    padding: 0 0 40px;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.form_content input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form_content input[type="text"], input[type="password"]{
+    border: 1px solid #141414;
+    border-radius: 2px;
+    outline: none;
+    background: transparent;
+    height: 40px;
+    color: #141414;
+    font-size: 16px;
+}
+
+.form_content input[type="submit"]{
+    background: #141414;
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.form_content input[type="submit"]:hover{
+    background: var(--hover);
+    transition: all 0.3s ease;
+}
+
+.form_content input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form_content .link_wrapper{
+    margin-top: .5rem;
+}
+
+.link_wrapper .forgot_password{
+    display: flex;
+    font-size: .9rem;
+    color: blue;
+    justify-content: center;
+}
+
+.link_wrapper h4{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+    color: gray;
+}
+
+.fa-google{
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+.fa-facebook{
+    color: #0000FF;
+    font-size: 1.5rem;
+}
+
+.alter_login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 2rem;
+}
+
+.alter_login a{
+    color: #141414;
+    font-size: 1.1rem;
+    font-weight:lighter;
+}
+
+.alter_login .sosmed_icon{
+    display: flex;
+    border: 1px solid #141414;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+}
+
+.sign_up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign_up h4{
+    color: gray;
+    font-weight: lighter;
+    margin-right: 5px;
+}
+
+.sign_up a{
+    color: blue;
+}
+
+/* =========================================================== */
+
+/* ====================== About Us =========================== */
+main .main_background{
+    background: url(/Images/About\ Us/bg.jpg);
+    background-size: cover;
+    height: 40%;
+    justify-content: center;
+}
+
+main .main_background{
+    color: #fff;
+    padding: 30rem 0;
+    text-align: center;
+}
+
+main .main_background h1{
+    margin-top: -26rem;
+    font-size: 5rem;
+    color: #F1EFEF;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+main .main_background h3{
+    margin-top: 2rem;
+    color: #3d3d3d;
+    font-size: 2rem;
+}
+
+main .main_background p{
+    line-height: 2rem;
+    font-size: 1.5rem;
+    margin: auto;
+    width: 50%;
+    color: #141414;
+}
+
+/* =========================================================== */
+
+/* ====================== Browse =========================== */
+main .browse_background{
+    background: #fff;
+    background-size: cover;
+    height: 100%;
+    justify-content: center;
+}
+
+.item-listings{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item-listing {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Item image */
+.item-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Item title */
+.item-title {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Item description */
+.item-description {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    color: #555;
+}
+
+/* Item price */
+.item-price {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+
+/* =========================================================== */
+
+
+/* ====================== Footer =========================== */
+
+.footer_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+    z-index: 999;
+    background: #fff;
+}
+
+.footer_icon{
+    display: inline-block;
+    margin-right: .5rem;
+    position: relative;
+    transition: .3s;
+}
+
+.footer_icon:hover{
+    transform: translateY(-12px);
+}
+
+.footer_icon .fa-facebook{
+    color: #0000FF;
+    font-size: 2.2rem;
+}
+
+.fa-instagram{
+    background: linear-gradient(135deg, #8a3ab9, #e95950, #bc2a8d, #fccc63, #fbad50, #cd486b,  #4c68d7);
+    color: #fff;
+    font-size: 2.2rem;
+    border-radius: 10px;
+}
+
+.fa-twitter{
+    color: #00FFFF;
+    font-size: 2.2rem;
+}
+
+.fa-linkedin{
+    font-size: 2.2rem;
+    color: #0A66C2;
+}
+
+.fa-youtube{
+    font-size: 2.2rem;
+    color: #FF0000;
+}
+
+/* =========================================================== */
+
+/* Media Screen */
+@media screen and (max-width: 980px) {
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hamburger_button{
+        display: flex;
+    }
+    
+    .furnid_title{
+        display: flex;
+    }
+    
+    .navbar_button{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar_button ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar_button li{
+        text-align: center;
+    }
+
+    .navbar_button li a{
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar_button.active{
+        display: flex;
+    }
+
+    .sign_btn {
+        padding-bottom: 2rem;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        margin: 5px 15px;
+    }
+
+    /* Homepage */
+
+    main .text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .homepage_content input{
+        width: 450px;
+    }
+
+    .footer_wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* ===================================================== */
+
